@@ -1,0 +1,131 @@
+.contact-form__content {
+  margin: 0 auto;
+  padding: 30px 15px;
+  max-width: 1230px;
+}
+
+.contact-form__heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.form__group {
+  border: solid;
+  width: 100%;
+}
+
+.form__group-namegender {
+  display: flex;
+  margin: 30px 0;
+}
+
+.registration_input input {
+  margin: 10px 0;
+}
+
+.form_group-title {
+  width: 20%;
+  margin: 0 50px 0 20px;
+  text-align: left;
+}
+
+.nametext {
+  margin: 0 50px 0 0;
+}
+
+.registration_date {
+  display: flex;
+  margin: 30px 0;
+}
+
+.email {
+  display: flex;
+  margin: 30px 0;
+}
+
+.form_search-button {
+  border: solid;
+}
+
+.form_reset-button {
+  border: solid;
+}
+
+/*.registration_input input {
+  margin
+}*/
+
+.registration_date input,
+.email input,
+.nametext {
+  height: 30px;
+}
+
+.form_search_button {
+  margin-top: 30px;
+}
+
+.form_reset_button {
+  margin: 30px;
+}
+
+.form__button-submit {
+  padding: 10px;
+  width: 10%;
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.userdata_table {
+  width: 100%;
+  text-align: center;
+}
+
+th,
+td {
+  width: 15%;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+svg.w-5.h-5 {
+  /*paginateメソッドの矢印の大きさ調整のために追加*/
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.relative.z-0.inline-flex.shadow-sm.rounded-md {
+  display: flex;
+  align-items: center;
+}
+
+.paginate2 {
+  display: flex;
+  align-items: center;
+}
+
+.paginate_group {
+  display: flex;
+  justify-content: space-between;
+}
