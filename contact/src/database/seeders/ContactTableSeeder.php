@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Faker\Factory as Faker;
+use App\Models\Contact;
+use Faker\Provider\ja_JP\Person as JapanesePerson;
 
 class ContactTableSeeder extends Seeder
 {
@@ -14,364 +17,35 @@ class ContactTableSeeder extends Seeder
      */
     public function run()
     {
-        $param = [
-            'gender' => '男性',
-            'email' => 'aaa@gmail.com',
-            'postcode' => '111-1111',
-            'address' => 'tokyo',
-            'building_name' => 'aaa',
-            'opinion' => 'aaa',
-            'fullname' => 'test taro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'abc@gmail.com',
-            'postcode' => '134-1111',
-            'address' => 'hokkaido',
-            'building_name' => '',
-            'opinion' => 'abx',
-            'fullname' => 'test jiro'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '女性',
-            'email' => 'abcjskfj@gmail.com',
-            'postcode' => '145-1451',
-            'address' => 'Kyoto',
-            'building_name' => 'ffdgsfds',
-            'opinion' => 'abx',
-            'fullname' => 'sato yuki'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'kfj@softbank.com',
-            'postcode' => '666-8889',
-            'address' => 'Saitama',
-            'building_name' => '',
-            'opinion' => 'zzzzz',
-            'fullname' => 'aoki yusuke'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'kfj@softbank.com',
-            'postcode' => '666-8889',
-            'address' => 'Saitama',
-            'building_name' => '',
-            'opinion' => 'zzzzz',
-            'fullname' => 'aoki yusuke'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'kfj@softbank.com',
-            'postcode' => '666-8889',
-            'address' => 'Saitama',
-            'building_name' => '',
-            'opinion' => 'zzzzz',
-            'fullname' => 'aoki yusuke'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'kfj@softbank.com',
-            'postcode' => '666-8889',
-            'address' => 'Saitama',
-            'building_name' => '',
-            'opinion' => 'zzzzz',
-            'fullname' => 'aoki yusuke'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'kfj@softbank.com',
-            'postcode' => '666-8889',
-            'address' => 'Saitama',
-            'building_name' => '',
-            'opinion' => 'zzzzz',
-            'fullname' => 'aoki yusuke'
-        ];
-        DB::table('contacts')->insert($param);
-        $param = [
-            'gender' => '男性',
-            'email' => 'kfj@softbank.com',
-            'postcode' => '666-8889',
-            'address' => 'Saitama',
-            'building_name' => '',
-            'opinion' => 'zzzzz',
-            'fullname' => 'aoki yusuke'
-        ];
+        $faker = Faker::create('ja_JP');
+        $faker->addProvider(new JapanesePerson($faker));
+
+        for ($i = 0; $i < 35; $i++) {
+            $gender = $faker->randomElement(['男性', '女性']);
+            $email = $faker->email;
+            $postcode = $faker->numberBetween(100, 999) . '-' . $faker->numberBetween(1000, 9999);
+            $address = $faker->address;
+            $buildingName = $faker->optional()->buildingNumber;
+            $opinion = $faker->text($maxNbChars = 200);
+            while (mb_strlen($opinion) < 30) {
+            $opinion = $faker->text($maxNbChars = 200);
+            }
+
+            $fullname = $faker->name;
+            $createdAt = $faker->dateTimeBetween('-1 year', 'now');
+            $updatedAt = $faker->dateTimeBetween($createdAt, 'now');
+
+            Contact::create([
+                'gender' => $gender,
+                'email' => $email,
+                'postcode' => $postcode,
+                'address' => $address,
+                'building_name' => $buildingName,
+                'opinion' => $opinion,
+                'fullname' => $fullname,
+                'created_at' => $createdAt,
+                'updated_at' => $updatedAt,
+            ]);
+        }
     }
 }

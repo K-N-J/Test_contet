@@ -57,10 +57,6 @@
   border: solid;
 }
 
-/*.registration_input input {
-  margin
-}*/
-
 .registration_date input,
 .email input,
 .nametext {
@@ -106,7 +102,6 @@ table {
 }
 
 svg.w-5.h-5 {
-  /*paginateメソッドの矢印の大きさ調整のために追加*/
   width: 30px;
   height: 30px;
   text-decoration: none;
@@ -128,4 +123,20 @@ svg.w-5.h-5 {
 .paginate_group {
   display: flex;
   justify-content: space-between;
+}
+
+.radio_button {
+  width: 20px;
+  height: 20px;
+}
+
+.input_dummy {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio--box {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }

@@ -10,7 +10,7 @@
             <h2>ご意見いただきありがとうございました。</h2>
         </div>
         <div class="form__button">
-            <button class="form__button-submit" type="submit">トップページへ</button>
+            <a href="/" class="form__button-submit">トップページへ</a>
         </div>
     </div>
 @endsection

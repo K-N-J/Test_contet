@@ -24,7 +24,6 @@ class ContactController extends Controller
 
     public function store(ContactRequest $request)
     {
-        //$contact = $request->only(['last_name','first_name','gender','email','postcode','address','billname','content']);
 
         $contact = $request->input('last_name') . ' ' . $request->input('first_name');
 
@@ -60,10 +59,11 @@ class ContactController extends Controller
     public function search(Request $request)
     {
         //dd($request);
+
         $query = DB::table('contacts');
 
         if (!empty($request->fullname)) {
-            $query->where('fullname', 'Like', "%". $request->fullname. "%");
+            $query->where('fullname', 'LIKE', "%" . $request->fullname . "%");
         }
 
         if (!empty($request->gender)) {
@@ -71,16 +71,15 @@ class ContactController extends Controller
         }
 
         if (!empty($request->email)) {
-            $query->where('email', 'Like', "%". $request->email. "%");
+            $query->where('email', 'LIKE', "%" . $request->email . "%");
         }
 
         if (!empty($request->start_date) && !empty($request->end_date)) {
             $query->whereBetween('created_at', [$request->start_date, $request->end_date]);
         }
 
-        $contacts = $query->paginate(10);
+        $contacts = $query->paginate(10)->appends($request->except('page'));
 
         return view('admin', compact('contacts'));
     }
-
 }

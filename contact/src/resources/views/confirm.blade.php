@@ -62,7 +62,7 @@
                 <button class="form__button-submit" type="submit">送信</button>
             </div>
             <div class="form__button">
-                <button class="form__button-submit1" type="submit">修正する</button>
+                <button onclick="history.back()" class="form__button-submit1" type="button">修正する</button>
             </div>
         </form>
     </div>
