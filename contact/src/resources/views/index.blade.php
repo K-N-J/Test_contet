@@ -21,7 +21,6 @@
                 </div>
                 <div class="form__group-content">
 
-
                     <div class="form__input--nametext">
                         <input class="nametext" type="text" id="last_name" name="last_name"
                             value="{{ old('last_name') }}" />

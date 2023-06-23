@@ -140,3 +140,7 @@ svg.w-5.h-5 {
   display: flex;
   flex-direction: row;
 }
+
+.form__button-reset{
+  border-bottom: 1px solid;
+}

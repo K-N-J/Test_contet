@@ -14,13 +14,15 @@ class ContactController extends Controller
         return view('index');
     }
 
+
     public function confirm(ContactRequest $request)
     {
         $contact = $request->only(['last_name','first_name','gender','email','postcode','address','billname','content']);
         $contact['fullname'] = $request->input('last_name') . ' ' . $request->input('first_name');
-        //dd($contact);
+
         return view('confirm', compact('contact'));
     }
+
 
     public function store(ContactRequest $request)
     {
@@ -41,20 +43,36 @@ class ContactController extends Controller
         return view('thanks');
     }
 
-    public function admin(){
+
+    public function admin(Request $request){
 
         $contacts = Contact::query()->paginate(10);
 
-        return view('admin', compact('contacts'));
+        return view('admin', compact('contacts', 'request'));
 
     }
 
-    public function destroy(Request $request,$id)
+
+    public function destroy($id)
     {
-        Contact::find($request->id)->delete();
 
-        return redirect('/admin')->with('message', 'データを削除しました');
+        Contact::find($id)->delete();
+
+        //$request = $request->only(['fullname','gender','email', 'start_date', 'end_date']);
+
+        //dd($request);
+
+        return redirect()->route('search');
     }
+
+
+    public function showSearch(Request $request)
+    {
+        $contacts = Contact::query()->paginate(10);
+
+        return view('admin', compact('contacts', 'request'));
+    }
+
 
     public function search(Request $request)
     {
@@ -80,6 +98,9 @@ class ContactController extends Controller
 
         $contacts = $query->paginate(10)->appends($request->except('page'));
 
-        return view('admin', compact('contacts'));
+        $request = $request->only(['fullname','gender','email', 'start_date', 'end_date']);
+        //dd($request);
+
+        return view('admin', compact('contacts', 'request'));
     }
 }
