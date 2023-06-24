@@ -11,9 +11,9 @@
 - 例)Laravel8.x(言語やフレームワーク、バージョンなどが記載されていると良い)
 - 
 # テーブル設計 <-- -作成したテーブル設計の画像---->
-![table設計図](https://github.com/K-N-J/Test_contet/commit/f1a056f22c342556e6be04c596e9672f132bb108)
+![table設計図](https://github.com/K-N-J/Test_contet/blob/main/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-06-25%203.36.54.png?raw=true)
 
 # ER図 <---作成したER図の画像- -- >-
-![ER設計図](https://github.com/K-N-J/Test_contet/commit/f1a056f22c342556e6be04c596e9672f132bb108)
+![ER設計図](https://github.com/K-N-J/Test_contet/blob/main/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202023-06-25%203.36.54.png?raw=true)
 # 他 に記載することがあれば 記述する
 例)# 環境構築、## アカウントの種類(テストユーザーなど)
