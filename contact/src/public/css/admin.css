@@ -1,3 +1,15 @@
+@media screen and (max-width: 768px) {
+  .child {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .child {
+    width: 100%;
+  }
+}
+
 .contact-form__content {
   margin: 0 auto;
   padding: 30px 15px;
@@ -101,6 +113,10 @@ table {
   border-collapse: collapse;
 }
 
+.table_opinion {
+  word-wrap: break-word;
+}
+
 svg.w-5.h-5 {
   width: 30px;
   height: 30px;
@@ -141,6 +157,6 @@ svg.w-5.h-5 {
   flex-direction: row;
 }
 
-.form__button-reset{
+.form__button-reset {
   border-bottom: 1px solid;
 }

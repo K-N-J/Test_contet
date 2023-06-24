@@ -44,33 +44,19 @@ class ContactController extends Controller
     }
 
 
-    public function admin(Request $request){
-
+    public function admin(Request $request)
+    {
         $contacts = Contact::query()->paginate(10);
 
         return view('admin', compact('contacts', 'request'));
-
     }
 
 
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-
         Contact::find($id)->delete();
 
-        //$request = $request->only(['fullname','gender','email', 'start_date', 'end_date']);
-
-        //dd($request);
-
-        return redirect()->route('search');
-    }
-
-
-    public function showSearch(Request $request)
-    {
-        $contacts = Contact::query()->paginate(10);
-
-        return view('admin', compact('contacts', 'request'));
+        return redirect()->route('search', session('searchItems'));
     }
 
 
@@ -98,8 +84,9 @@ class ContactController extends Controller
 
         $contacts = $query->paginate(10)->appends($request->except('page'));
 
-        $request = $request->only(['fullname','gender','email', 'start_date', 'end_date']);
-        //dd($request);
+        $searchItems = $request->only(['fullname','gender','email', 'start_date', 'end_date']);
+
+        session(['searchItems' => $searchItems]);
 
         return view('admin', compact('contacts', 'request'));
     }
