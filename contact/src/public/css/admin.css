@@ -1,12 +1,9 @@
 @media screen and (max-width: 768px) {
-  .child {
-    width: 49%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .child {
+  .form__group {
+    border: solid;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -104,10 +101,6 @@ td {
   width: 15%;
 }
 
-th {
-  border-bottom: 1px solid black;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -115,6 +108,7 @@ table {
 
 .table_opinion {
   word-wrap: break-word;
+  height: 50px;
 }
 
 svg.w-5.h-5 {

@@ -1,3 +1,12 @@
+@media screen and (max-width: 768px) {
+  .form__group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+}
+
 .contact-form__content {
   margin: 0 auto;
   padding: 30px 15px;
@@ -16,7 +25,7 @@
 }
 
 .form__group-title {
-  width: 20%;
+  width: 200px;
   margin: 0 auto 0 20px;
   text-align: left;
 }
@@ -35,6 +44,10 @@
   justify-content: space-between;
 }
 
+.form__group-content p {
+  margin: 50px 10px 0 0;
+}
+
 .form__input--nametext {
   width: 45%;
   display: flex;
@@ -47,6 +60,7 @@
   border: 1px solid #ddd;
   border-radius: 3px;
   appearance: none;
+  margin: 35px auto 0;
 }
 
 .form__input--text {
@@ -57,6 +71,7 @@
 .form__input--text,
 .form__input--textarea {
   width: 100%;
+  margin: 35px auto 0;
 }
 
 .form__hint {
@@ -106,6 +121,7 @@
   text-align: left;
   margin: 0 auto 0 5px;
   border-radius: 3px;
+  margin: 20px auto 0;
 }
 
 .form__button {
